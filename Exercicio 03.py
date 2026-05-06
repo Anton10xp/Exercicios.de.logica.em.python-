@@ -12,4 +12,3 @@ print("É alfanumerico? ", algo.isalnum( ))
 print("Está em maiusculo? ", algo.isupper( ))
 print("Está em minusculo? ", algo.islower( ))
 print("Está capitalizada? ", algo.istitle( ))
-
