@@ -7,7 +7,7 @@ anos = int(input("Digite em quantos anos você irá pagara a casa: "))
 prestacao = valor / (anos * 12)
 taxa = salario * 0.30
 
-if prestacao < taxa:
+if prestacao <= taxa:
     print("O seu financiamento foi APROVADO! Valor da parcela: {:.2f} R$ / mês ".format(prestacao))
 else:
     print("Infelizmente o seu financiamento NÃO foi aprovado! ")
