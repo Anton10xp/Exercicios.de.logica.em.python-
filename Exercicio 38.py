@@ -4,13 +4,13 @@
 nascimento = int(input("Digite o seu ano de nascimento: "))
 
 idade = 2026 - nascimento
+
 anodoalistamento = nascimento + 18
-pasou = anodoalistamento - nascimento
 
 print("Quem nasceu em {} tem {} anos em 2026".format(nascimento, idade))
 
 if idade == 18:
-    ("Você tem que se alistar imediatamente! ")
+    print("Você tem que se alistar imediatamente! ")
 
 elif idade > 18:
     saldo = idade - 18
