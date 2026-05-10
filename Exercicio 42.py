@@ -25,3 +25,4 @@ elif imc > 25 and imc <= 30:
 
 else:
     print("Quem tem o IMC = {:.2f} está com Obesidade Mórbida! ".format(imc))
+    
