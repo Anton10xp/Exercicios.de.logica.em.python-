@@ -12,7 +12,7 @@ pc = randint(0,2)
 opçoes = int(input("Digite a Opção que você deseja:\n" \
 "OPÇÃO (0): PEDRA\n" \
 "OPÇÃO (1): TESOURA\n" \
-"OPÇÃO (2): PEDRA\n" \
+"OPÇÃO (2): PAPEL\n" \
 "Digite:  "))
 
 print("JO")
@@ -29,17 +29,17 @@ if pc == 0:
     if opçoes == 0:
         print("EMPATE!")
     elif opçoes == 1:
-        print("JOGADOR VENCEU!")
-    elif opçoes == 2:
         print("COMPUTADOR VENCEU!")
+    elif opçoes == 2:
+        print("JOGADOR VENCEU!")
     else:
         print("Jogada INVÁLIDA! ")
 
 elif pc == 1:
    
-    if opçoes == 0:
+    if opçoes == 1:
        print("EMPATE!") 
-    elif opçoes == 1:
+    elif opçoes == 0:
         print("JOGADOR VENCEU!")
     elif opçoes == 2:
         print("COMPUTADOR VENCEU!")
@@ -47,7 +47,7 @@ elif pc == 1:
         print("Jogada INVÁLIDA! ")
 
 elif pc == 2:
-    if opçoes == 0:
+    if opçoes == 2:
         print("EMPATE!")         
     elif opçoes == 1:
         print("JOGADOR VENCEU!") 
