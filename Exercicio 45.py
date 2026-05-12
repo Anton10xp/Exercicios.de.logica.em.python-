@@ -3,6 +3,6 @@
 
 from time import sleep
 
-for contador in range(10, -1, -1):
-    print(contador)
+for i in range (10, -1, -1):
+    print(i)
     sleep(0.5)
