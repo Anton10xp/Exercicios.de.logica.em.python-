@@ -12,7 +12,7 @@ for i in range(LINHAS):
 
 for i in range(LINHAS):
     for j in range(COLUNAS):
-        matriz[i][j] = i + j   
+        matriz[i][j] = i + j
     
 
 print(matriz)
