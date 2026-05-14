@@ -1,57 +1,21 @@
 #Exercicio 44-
 #Crie um programa que faça o computador jogar Jokenpô com você.
 
-from random import randint
+import random
 
-from time import sleep
+opçoes = ["pedra", "papel", "tesoura"]
 
-itens = ("Tesoura","Papel","Pedra")
+jogador = str(input("Digite: Pedra, Papel ou Tesoura:  "))
 
-pc = randint(0,2)
+pc = random.choice(opçoes)
 
-opçoes = int(input("Digite a Opção que você deseja:\n" \
-"OPÇÃO (0): PEDRA\n" \
-"OPÇÃO (1): TESOURA\n" \
-"OPÇÃO (2): PAPEL\n" \
-"Digite:  "))
+if jogador == pc:
+    print("Empate")
 
-print("JO")
-sleep(1)
-print("KEN")
-sleep(1)
-print("PO")
-sleep(1)
+elif (jogador == "pedra" and pc == "tesoura") or \
+        (jogador == "papel" and pc == "pedra") or \
+        (jogador == "tesoura" and pc == "papel"):
+    print("Você venceu!")
 
-print("O computador escolheu {} ".format(itens[pc]))
-print("O jogador escolheu {} ".format(itens[opçoes]))
-
-if pc == 0:
-    if opçoes == 0:
-        print("EMPATE!")
-    elif opçoes == 1:
-        print("COMPUTADOR VENCEU!")
-    elif opçoes == 2:
-        print("JOGADOR VENCEU!")
-    else:
-        print("Jogada INVÁLIDA! ")
-
-elif pc == 1:
-   
-    if opçoes == 1:
-       print("EMPATE!") 
-    elif opçoes == 0:
-        print("JOGADOR VENCEU!")
-    elif opçoes == 2:
-        print("COMPUTADOR VENCEU!")
-    else:
-        print("Jogada INVÁLIDA! ")
-
-elif pc == 2:
-    if opçoes == 2:
-        print("EMPATE!")         
-    elif opçoes == 1:
-        print("JOGADOR VENCEU!") 
-    elif opçoes == 2:
-        print("COMPUTADOR VENCEU!")
-    else:
-        print("Jogada INVÁLIDA! ")
+else:
+    print("Você perdeu!")
