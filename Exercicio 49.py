@@ -3,10 +3,11 @@
 
 soma = 0
 contador = 0
+
 for i in range(1,7):
-    numero = (int(input("Digite o {}° valor: ".format(i))))
+    numero = int(input("Digite o {}° número: ".format(i)))
     if numero % 2 == 0:
         soma = soma + numero
         contador = contador + 1
-print("você me informou {} numeros pares e soma entre eles é igual a: {} ".format(contador,soma))
 
+print("A soma entre os {} numeros pares que você digiotu é igual a {}: ".format(contador, soma))
